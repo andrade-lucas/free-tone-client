@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Main from './pages/Layout';
+import { Switch, Route } from 'react-router-dom';
+import MainPage from './pages/MainPage';
+import CreateAlbumPage from './pages/album/CreateAlbumPage';
 
 const Routes = () => (
-    <BrowserRouter>
+    <Route>
         <Switch>
-            <Route exact path="/" component={Main} />
+            <Route exact path="/" component={MainPage} />
+            <Route path="albums/create" component={CreateAlbumPage} />
         </Switch>
-    </BrowserRouter>
+    </Route>
 );
 
 export default Routes;

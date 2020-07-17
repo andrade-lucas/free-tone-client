@@ -13,7 +13,7 @@ const Footer = () => (
                 <a className="nav-link" href="#">Quem Somos?</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Termos de Responsabilidade</a>
+                <a className="nav-link" href="" data-toggle="modal" data-target="#systemTerms">Termos de Responsabilidade</a>
             </li>
         </ul>
         <span className="copyright ml-auto my-auto mr-2">Copyright © 2020
