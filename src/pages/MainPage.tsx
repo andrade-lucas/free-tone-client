@@ -5,7 +5,7 @@ export default class MainPage extends React.Component {
     render() {
         return (
             <>
-                <PageHeader title="FreeTone" subtitle="Página Princilap" />
+                <PageHeader title="FreeTone" subtitle="Página Princilal" />
 
                 <div className="row">
                     <div className="col-md-12 col-sm-12 mb-12">
