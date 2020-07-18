@@ -40,7 +40,7 @@ export default class AsideNavBar extends React.Component {
                             <div className="dropdown-menu dropdown-menu-small">
                                 <a className="dropdown-item" href="user-profile-lite.html">
                                     <i className="material-icons">&#xE7FD;</i> Usuário</a>
-                                <Link to="albums/create" className="dropdown-item">
+                                <Link to="/albums/create" className="dropdown-item">
                                     <i className="material-icons">album</i> Álbum</Link>
                                 <div className="dropdown-divider"></div>
                             </div>
@@ -52,10 +52,10 @@ export default class AsideNavBar extends React.Component {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#">
+                            <Link to="/albums" className="nav-link">
                                 <i className="material-icons">album</i>
                                 <span>Meus Álbuns</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link " href="#">
