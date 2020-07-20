@@ -4,6 +4,7 @@ import SystemTerms from '../components/SystemTerms';
 import TopBar from '../components/TopBar';
 import Footer from '../components/Footer';
 import Routes from '../routes';
+import PageHeader from '../components/PageHeader';
 
 export default class Layout extends React.Component {
     render() {
@@ -15,7 +16,11 @@ export default class Layout extends React.Component {
                         <div className="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
                             <TopBar />
                             <div className="main-content-container container-fluid px-4">
-                                <Routes />
+                                <PageHeader title="FreeTone" subtitle="Página Princilal" />
+
+                                <div className="row">
+                                    <h1>aaaaaaa</h1>
+                                </div>
                             </div>
                             <Footer />
                         </div>

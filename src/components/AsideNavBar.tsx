@@ -42,7 +42,8 @@ export default class AsideNavBar extends React.Component {
                                     <i className="material-icons">&#xE7FD;</i> Usuário</a>
                                 <Link to="/albums/create" className="dropdown-item">
                                     <i className="material-icons">album</i> Álbum</Link>
-                                <div className="dropdown-divider"></div>
+                                <Link to="/songs/create" className="dropdown-item">
+                                    <i className="material-icons">album</i> Músicas</Link>
                             </div>
                         </li>
                         <li className="nav-item">
