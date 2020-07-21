@@ -1,17 +1,17 @@
 export class UserProfile {
-    constructor(
-        public id: string,
-        public firstName: string,
-        public lastName: string,
-        public email: string,
-        public birthDate: string,
-        public street: string,
-        public number: string,
-        public neighborhood: string,
-        public city: string,
-        public state: string,
-        public country: string,
-        public zipCode: string,
-        public image: string
-    ) { }
+    public Id: string = '';
+    public FirstName: string = '';
+    public LastName: string = '';
+    public Email: string = '';
+    public BirthDate: string = '';
+    public Street: string = '';
+    public Number: string = '';
+    public Neighborhood: string = '';
+    public City: string = '';
+    public State: string = '';
+    public Country: string = '';
+    public ZipCode: string = '';
+    public Image: string = '';
+    
+    constructor() { }
 }
