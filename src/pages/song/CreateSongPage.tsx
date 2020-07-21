@@ -5,7 +5,7 @@ export default class CreateSongPage extends React.Component {
     render() {
         return (
             <div className="col-md-12 col-sm-12 mb-12">
-                <PageHeader title="Cadastrar Música" subtitle="FreeTone" />
+                <PageHeader title="Cadastrar Música" subtitle="FreeTone" link="/" />
 
                 <div className="card card-small">
                     <div className="card-body d-flex">

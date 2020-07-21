@@ -16,7 +16,7 @@ export default class Layout extends React.Component {
                         <div className="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
                             <TopBar />
                             <div className="main-content-container container-fluid px-4">
-                                <PageHeader title="FreeTone" subtitle="Página Princilal" />
+                                <PageHeader title="FreeTone" subtitle="Página Princilal" link="" />
 
                                 <div className="row">
                                     <h1>aaaaaaa</h1>

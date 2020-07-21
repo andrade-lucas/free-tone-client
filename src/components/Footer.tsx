@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
     <footer className="main-footer d-flex p-2 px-3 bg-white border-top">
         <ul className="nav">
             <li className="nav-item">
-                <a className="nav-link" href="#">Página Principal</a>
+                <Link to="/" className="nav-link">Página Principal</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Serviços</a>
+                <Link to="/" className="nav-link">Serviços</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Quem Somos?</a>
+                <Link to="/" className="nav-link">Quem Somos?</Link>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="" data-toggle="modal" data-target="#systemTerms">Termos de Responsabilidade</a>

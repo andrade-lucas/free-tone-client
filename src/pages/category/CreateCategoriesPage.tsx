@@ -1,23 +1,16 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
 
-interface IProps {
-}
-
-interface IState {
-}
-
-export default class CreateAlbumPage extends React.Component<IProps, IState> {
-    constructor(props: IProps) {
+export default class CreateCategoriesPage extends React.Component {
+    constructor(props: any) {
         super(props);
-        this.state = {}
     }
 
     render() {
         return (
             <div className="col-md-12 col-sm-12 mb-12">
-                <PageHeader title="Cadastrar Álbum" subtitle="FreeTone" link="/albums" />
-                
+                <PageHeader title="Cadastrar Categoria" subtitle="FreeTone" link="/categories" />
+
                 <div className="card card-small">
                     <div className="card-body d-flex">
                         <form className="row col-md-12">

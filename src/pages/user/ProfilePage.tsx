@@ -17,4 +17,10 @@ export default class ProfilePage extends React.Component<IProps, IState> {
             user: null
         };
     }
+
+    render() {
+        return (
+            <h3>Perfil de usuário</h3>
+        );
+    }
 }
