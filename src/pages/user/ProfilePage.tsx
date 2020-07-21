@@ -19,6 +19,10 @@ export default class ProfilePage extends React.Component<IProps, IState> {
         };
     }
 
+    handleCepSearch = (event: any) => {
+        const cep = event.target.value;
+    } 
+
     render() {
         return (
             <div>
@@ -32,22 +36,22 @@ export default class ProfilePage extends React.Component<IProps, IState> {
                                     <img className="rounded-circle" src="../images/avatars/user-image.png" alt="Naruto Uzumaki" width="150" /> </div>
                                 <h4 className="mb-0">Naruto Uzumaki</h4>
                                 <span className="text-muted d-block mb-2">Padrão</span>
-                                {/* <button type="button" className="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
-                                    <i className="material-icons mr-1">person_add</i>Follow</button> */}
+                                <button type="button" className="mb-2 btn btn-sm btn-pill btn-outline-primary mr-2">
+                                    <i className="material-icons mr-1">add_a_photo</i>Trocar Imagem</button>
                             </div>
                             <ul className="list-group list-group-flush">
                                 <li className="list-group-item px-4">
                                     <div className="progress-wrapper">
                                         <strong className="text-muted d-block mb-2">Status do Perfil</strong>
                                         <div className="progress progress-sm">
-                                            <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={74} aria-valuemin={0} aria-valuemax={100} style={{ width: '74%' }}>
-                                                <span className="progress-value">74%</span>
+                                            <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} style={{ width: '50%' }}>
+                                                <span className="progress-value">50%</span>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li className="list-group-item p-4">
-                                    <strong className="text-muted d-block mb-2">Descrição</strong>
+                                    <strong className="text-muted d-block mb-2">Sobre</strong>
                                     <span>O Naruto pode ser um pouco duro às vezes, talvez você não saiba disso, mas o Naruto também cresceu sem pai. Na verdade ele nunca conheceu nenhum de seus pais, e nunca teve nenhum amigo em nossa aldeia. Mesmo assim eu nunca vi ele chorar, ficar zangado ou se dar por vencido, ele está sempre disposto a melhorar, ele quer ser respeitado, é o sonho dele e o Naruto daria a vida por isso sem hesitar. Meu palpite é que ele se cansou de chorar e decidiu fazer alguma coisa a respeito!</span>
                                 </li>
                             </ul>
@@ -65,6 +69,7 @@ export default class ProfilePage extends React.Component<IProps, IState> {
                                             <form>
                                                 <div className="form-row">
                                                     <input type="hidden" name="Id" />
+                                                    <input type="hidden" name="Image" value="" />
                                                     <div className="form-group col-md-6">
                                                         <label htmlFor="FirstName">Nome</label>
                                                         <input type="text" className="form-control" id="FirstName" name="FirstName" placeholder="Nome" value="Naruto" />
@@ -76,44 +81,62 @@ export default class ProfilePage extends React.Component<IProps, IState> {
                                                 </div>
                                                 <div className="form-row">
                                                     <div className="form-group col-md-6">
-                                                        <label htmlFor="Email">E-mail</label>
-                                                        <input type="email" className="form-control" id="Email" name="Email" placeholder="E-mail" value="naruto_uzumaki@konoha.com" />
+                                                        <label htmlFor="fePassword">Aniversário</label>
+                                                        <input type="date" className="form-control" id="Birthdate" name="Birthdate" />
                                                     </div>
                                                     <div className="form-group col-md-6">
-                                                        <label htmlFor="fePassword">Senha</label>
-                                                        <input type="password" className="form-control" id="Password" name="Password" placeholder="Senha" />
+                                                        <label htmlFor="Email">E-mail</label>
+                                                        <input type="email" disabled className="form-control" id="Email" name="Email" placeholder="E-mail" value="naruto_uzumaki@konoha.com" />
                                                     </div>
                                                 </div>
-                                                <div className="form-group">
-                                                    <label htmlFor="feInputAddress">Rua</label>
-                                                    <input type="text" className="form-control" id="Street" placeholder="Rua" />
+                                                <div className="form-row">
+                                                    <div className="form-group col-md-8">
+                                                        <label htmlFor="Street">Rua</label>
+                                                        <input type="text" className="form-control" id="Street" name="Number" placeholder="Rua" />
+                                                    </div>
+                                                    <div className="form-group col-md-4">
+                                                        <label htmlFor="Number">Número</label>
+                                                        <input type="text" className="form-control" id="Number" name="Number" placeholder="Número" />
+                                                    </div>
                                                 </div>
                                                 <div className="form-row">
-                                                    <div className="form-group col-md-4">
+                                                    <div className="form-group col-md-6">
+                                                        <label htmlFor="neighborhood">Bairro</label>
+                                                        <input type="text" className="form-control" id="Neighborhood" name="Neighborhood" placeholder="Bairro" />
+                                                    </div>
+                                                    <div className="form-group col-md-6">
                                                         <label htmlFor="City">Cidade</label>
                                                         <input type="text" className="form-control" id="City" name="City" placeholder="Cidade" />
                                                     </div>
+                                                </div>
+                                                <div className="form-row">
                                                     <div className="form-group col-md-4">
                                                         <label htmlFor="State">Estado</label>
-                                                        <select id="State" className="form-control">
-                                                            <option disabled selected>Selecione uma opção</option>
-                                                            <option>...</option>
-                                                        </select>
+                                                        <input type="text" className="form-control" id="State" name="State" placeholder="Estado" />
+                                                    </div>
+                                                    <div className="form-group col-md-4">
+                                                        <label htmlFor="Country">País</label>
+                                                        <input type="text" className="form-control" id="Country" name="Country" placeholder="País" />
                                                     </div>
                                                     <div className="form-group col-md-4">
                                                         <label htmlFor="ZipCode">CEP</label>
-                                                        <input type="text" className="form-control" id="ZipCode" name="ZipCode" />
+                                                        <div className="input-group">
+                                                            <input type="text" className="form-control" id="ZipCode" name="ZipCode" />
+                                                            <div className="input-group-append">
+                                                                <button className="btn btn-primary"><i className="material-icons">search</i></button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div className="form-row">
                                                     <div className="form-group col-md-12">
-                                                        <label htmlFor="Description">Descrição</label>
+                                                        <label htmlFor="Description">Sobre</label>
                                                         <textarea className="form-control" name="Description" rows={5} />
                                                     </div>
                                                 </div>
                                                 <div className="form-row">
                                                     <div className="form-group col-md-12 text-right">
-                                                        <button type="submit" className="btn btn-accent"><i className="material-icons">refresh</i> Atualizar Conta</button>
+                                                        <button type="submit" className="btn btn-accent"><i className="material-icons">save</i> Atualizar Conta</button>
                                                     </div>
                                                 </div>
                                             </form>
