@@ -61,7 +61,7 @@ export default class AsideNavBar extends React.Component {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/" className="nav-link">
+                            <Link to="/account/profile" className="nav-link">
                                 <i className="material-icons">person</i>
                                 <span>Meu Perfil</span>
                             </Link>

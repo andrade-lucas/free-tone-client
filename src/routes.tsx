@@ -6,6 +6,7 @@ import ListAlbumsPage from './pages/album/ListAlbumsPage';
 import CreateSongPage from './pages/song/CreateSongPage';
 import ListCategoriesPage from './pages/category/ListCategoriesPage';
 import CreateCategoriesPage from './pages/category/CreateCategoriesPage';
+import ProfilePage from './pages/user/ProfilePage';
 
 
 const Routes = () => (
@@ -16,6 +17,7 @@ const Routes = () => (
         <Route path="/songs/create" component={CreateSongPage} />
         <Route exact path="/categories" component={ListCategoriesPage} />
         <Route path="/categories/create" component={CreateCategoriesPage} />
+        <Route exact path="/account/profile" component={ProfilePage} />
     </Switch>
 );
 
