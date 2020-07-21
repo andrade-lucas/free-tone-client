@@ -9,7 +9,7 @@ interface IProps {
 
 const AlbumComponent = ({ id, image, title }: IProps) => {
     return (
-        <Link to={'/'} className="col-md-3 col-sm-12" style={{marginBottom: 20}}>
+        <Link to={'/albums/' + id} className="col-md-3 col-sm-12" style={{marginBottom: 20}}>
             <div className="card h-100">
                 <img src={image} className="card-img-top" alt={title} />
                 <div className="card-body">

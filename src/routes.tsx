@@ -7,13 +7,15 @@ import CreateSongPage from './pages/song/CreateSongPage';
 import ListCategoriesPage from './pages/category/ListCategoriesPage';
 import CreateCategoriesPage from './pages/category/CreateCategoriesPage';
 import ProfilePage from './pages/user/ProfilePage';
+import AlbumDetailPage from './pages/album/AlbumDetailPage';
 
 
 const Routes = () => (
     <Switch>
         <Route exact path="/" component={MainPage} />
         <Route exact path="/albums" component={ListAlbumsPage} />
-        <Route path="/albums/create" component={CreateAlbumPage} />
+        <Route exact path="/albums/create" component={CreateAlbumPage} />
+        <Route path="/albums/:id" component={AlbumDetailPage} />
         <Route path="/songs/create" component={CreateSongPage} />
         <Route exact path="/categories" component={ListCategoriesPage} />
         <Route path="/categories/create" component={CreateCategoriesPage} />
