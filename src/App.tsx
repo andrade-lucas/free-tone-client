@@ -2,7 +2,6 @@ import React from 'react';
 import Routes from './routes';
 import AsideNavBar from './components/AsideNavBar';
 import TopBar from './components/TopBar';
-import PageHeader from './components/PageHeader';
 import Footer from './components/Footer';
 import SystemTerms from './components/SystemTerms';
 import { BrowserRouter } from 'react-router-dom';
@@ -16,11 +15,7 @@ function App() {
           <div className="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
             <TopBar />
             <div className="main-content-container container-fluid px-4">
-              <PageHeader title="FreeTone" subtitle="Página Princilal" />
-
-              <div className="row">
-                <Routes />
-              </div>
+              <Routes />
             </div>
             <Footer />
           </div>

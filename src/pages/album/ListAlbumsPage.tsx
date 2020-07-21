@@ -12,6 +12,8 @@ export default class ListAlbumsPage extends React.Component<IProps> {
     render() {
         return (
             <div className="col-md-12 col-sm-12 mb-12">
+                <PageHeader title="Lista de Álbuns" subtitle="FreeTone" />
+                
                 <div className="card card-small">
                     <div className="card-body d-flex">
                         <h1>Listagem de Álbuns</h1>

@@ -27,13 +27,13 @@ export default class AsideNavBar extends React.Component {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#">
+                            <Link to="/" className="nav-link">
                                 <i className="material-icons">vertical_split</i>
                                 <span>Lançamentos</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-nowrap" data-toggle="dropdown" href="add-new-post.html">
+                            <a className="nav-link dropdown-toggle text-nowrap" data-toggle="dropdown" href="#">
                                 <i className="material-icons">note_add</i>
                                 <span>Adicionar</span>
                             </a>
@@ -43,14 +43,14 @@ export default class AsideNavBar extends React.Component {
                                 <Link to="/albums/create" className="dropdown-item">
                                     <i className="material-icons">album</i> Álbum</Link>
                                 <Link to="/songs/create" className="dropdown-item">
-                                    <i className="material-icons">album</i> Músicas</Link>
+                                    <i className="material-icons">library_music</i> Músicas</Link>
                             </div>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#">
+                            <Link to="/" className="nav-link">
                                 <i className="material-icons">view_module</i>
                                 <span>Relatórios &amp; Análises</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/albums" className="nav-link">
@@ -59,10 +59,10 @@ export default class AsideNavBar extends React.Component {
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link " href="#">
+                            <Link to="/" className="nav-link">
                                 <i className="material-icons">person</i>
                                 <span>Meu Perfil</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="" data-toggle="modal" data-target="#systemTerms">

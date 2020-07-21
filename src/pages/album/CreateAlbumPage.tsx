@@ -1,4 +1,5 @@
 import React from 'react';
+import PageHeader from '../../components/PageHeader';
 
 interface IProps {
 }
@@ -15,6 +16,8 @@ export default class CreateAlbumPage extends React.Component<IProps, IState> {
     render() {
         return (
             <div className="col-md-12 col-sm-12 mb-12">
+                <PageHeader title="Cadastrar Álbum" subtitle="FreeTone" />
+                
                 <div className="card card-small">
                     <div className="card-body d-flex">
                         <div className="row col-md-12">

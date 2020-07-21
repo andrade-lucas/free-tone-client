@@ -1,12 +1,15 @@
 import React from 'react';
+import PageHeader from '../../components/PageHeader';
 
 export default class CreateSongPage extends React.Component {
     render() {
         return (
             <div className="col-md-12 col-sm-12 mb-12">
+                <PageHeader title="Cadastrar Música" subtitle="FreeTone" />
+
                 <div className="card card-small">
                     <div className="card-body d-flex">
-                        <div className="row col-md-12">
+                        <form className="row col-md-12">
                             <div className="col-12 col-md-6">
                                 <div className="form-group">
                                     <label htmlFor="FirstName">Título</label>
@@ -39,8 +42,14 @@ export default class CreateSongPage extends React.Component {
                                     <input type="date" id="PublishedDate" name="PublishedDate" className="form-control" />
                                 </div>
                             </div>
-                        </div>
-                        <div className="row col-md-12"></div>
+                            <div className="col-12 col-md-12">
+                                <div className="form-group text-right">
+                                    <button type="submit" className="btn btn-primary"><i className="material-icons">save</i> Salvar</button>
+                                    &nbsp;
+                                    <button type="button" className="btn btn-default">Cancelar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
