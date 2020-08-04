@@ -38,14 +38,30 @@ export default class AsideNavBar extends React.Component {
                                 <span>Adicionar</span>
                             </a>
                             <div className="dropdown-menu dropdown-menu-small">
-                                <Link to="/users/create" className="dropdown-item" href="user-profile-lite.html">
+                                <Link to="/users/create" className="dropdown-item">
                                     <i className="material-icons">&#xE7FD;</i> Usuário</Link>
                                 <Link to="/albums/create" className="dropdown-item">
                                     <i className="material-icons">album</i> Álbum</Link>
                                 <Link to="/categories/create" className="dropdown-item">
                                     <i className="material-icons">category</i> Categoria</Link>
+                                <Link to="/singers/create" className="dropdown-item">
+                                    <i className="material-icons">person_add</i> Artista</Link>
                                 <Link to="/songs/create" className="dropdown-item">
                                     <i className="material-icons">library_music</i> Músicas</Link>
+                            </div>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle text-nowrap" data-toggle="dropdown" href="#">
+                                <i className="material-icons">list</i>
+                                <span>Listas</span>
+                            </a>
+                            <div className="dropdown-menu dropdown-menu-small">
+                                <Link to="/users" className="dropdown-item">
+                                    <i className="material-icons">group</i> Usuários</Link>
+                                <Link to="/singers" className="dropdown-item">
+                                    <i className="material-icons">mic</i> Artístas</Link>
+                                <Link to="/categories" className="dropdown-item">
+                                    <i className="material-icons">category</i> Categorias</Link>
                             </div>
                         </li>
                         <li className="nav-item">

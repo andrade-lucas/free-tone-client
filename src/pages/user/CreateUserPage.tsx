@@ -71,7 +71,7 @@ export default class CreateUserPage extends React.Component<IProps, IState> {
         const { FirstName, LastName, Email, Password, Birthdate, Street, Number, Neighborhood, City, State, Country, ZipCode, Image } = this.state;
         return (
             <div className="col-md-12 col-sm-12 mb-12">
-                <PageHeader title="Cadastrar Usuário" subtitle="FreeTone" link="/" />
+                <PageHeader title="Cadastrar Usuário" subtitle="FreeTone" link="/users" />
 
                 <div className="card card-small">
                     <div className="card-body d-flex">

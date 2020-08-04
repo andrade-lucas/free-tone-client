@@ -5,11 +5,15 @@ import CreateAlbumPage from './pages/album/CreateAlbumPage';
 import ListAlbumsPage from './pages/album/ListAlbumsPage';
 import CreateSongPage from './pages/song/CreateSongPage';
 import ListCategoriesPage from './pages/category/ListCategoriesPage';
-import CreateCategoriesPage from './pages/category/CreateCategoriesPage';
+import CreateCategoryPage from './pages/category/CreateCategoryPage';
 import ProfilePage from './pages/user/ProfilePage';
 import AlbumDetailPage from './pages/album/AlbumDetailPage';
 import CreateUserPage from './pages/user/CreateUserPage';
-
+import ListUsersPage from './pages/user/ListUsersPage';
+import CreateSingerPage from './pages/singers/CreateSingerPage';
+import ListSingersPage from './pages/singers/ListSingersPage';
+import UpdateSingerPage from './pages/singers/UpdateSingerPage';
+import UpdateCategoryPage from './pages/category/UpdateCategoryPage';
 
 const Routes = () => (
     <Switch>
@@ -19,9 +23,14 @@ const Routes = () => (
         <Route path="/albums/:id" component={AlbumDetailPage} />
         <Route path="/songs/create" component={CreateSongPage} />
         <Route exact path="/categories" component={ListCategoriesPage} />
-        <Route path="/categories/create" component={CreateCategoriesPage} />
+        <Route exact path="/categories/create" component={CreateCategoryPage} />
+        <Route path="/categories/update/:id" component={UpdateCategoryPage} />
         <Route exact path="/account/profile" component={ProfilePage} />
+        <Route exact path="/users" component={ListUsersPage} />
         <Route exact path="/users/create" component={CreateUserPage} />
+        <Route exact path="/singers" component={ListSingersPage} />
+        <Route exact path="/singers/create" component={CreateSingerPage} />
+        <Route path="/singers/update/:id" component={UpdateSingerPage} />
     </Switch>
 );
 

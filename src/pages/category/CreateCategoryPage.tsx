@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHeader from '../../components/PageHeader';
 
-export default class CreateCategoriesPage extends React.Component {
+export default class CreateCategoryPage extends React.Component {
     constructor(props: any) {
         super(props);
     }
@@ -24,6 +24,13 @@ export default class CreateCategoriesPage extends React.Component {
                                 <div className="form-group">
                                     <label htmlFor="Description">Descrição</label>
                                     <textarea id="Description" rows={7} name="Description" className="form-control" />
+                                </div>
+                            </div>
+                            <div className="col-12 col-md-12">
+                                <div className="form-group text-right">
+                                    <button type="submit" className="btn btn-primary"><i className="material-icons">save</i> Salvar</button>
+                                    &nbsp;
+                                    <button type="button" className="btn btn-default">Cancelar</button>
                                 </div>
                             </div>
                         </form>
