@@ -28,9 +28,9 @@ export default class UserProfileForm extends React.Component<IProps, IState> {
         super(props);
         this.state = {
             Id: '',
-            FirstName: 'Naruto',
-            LastName: 'Uzumaki',
-            Birthdate: '1998-05-29',
+            FirstName: '',
+            LastName: '',
+            Birthdate: '',
             Email: 'naruto_uzumaki@konoha.com',
             Street: '',
             Number: '',
@@ -100,6 +100,25 @@ export default class UserProfileForm extends React.Component<IProps, IState> {
                                             </div>
                                         </div>
                                         <div className="form-row">
+                                            <div className="form-group col-md-4">
+                                                <label htmlFor="ZipCode">CEP</label>
+                                                <div className="input-group">
+                                                    <input type="text" className="form-control" id="ZipCode" name="ZipCode" maxLength={9} value={ZipCode} onChange={this.handleInputChange} />
+                                                    <div className="input-group-append">
+                                                        <button type="button" className="btn btn-primary" onClick={this.handleZipCodeSearch}><i className="material-icons">search</i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="form-group col-md-4">
+                                                <label htmlFor="State">Estado</label>
+                                                <input type="text" className="form-control" id="State" name="State" maxLength={2} value={State} onChange={this.handleInputChange} />
+                                            </div>
+                                            <div className="form-group col-md-4">
+                                                <label htmlFor="Country">País</label>
+                                                <input type="text" className="form-control" id="Country" name="Country" value={Country} onChange={this.handleInputChange} />
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
                                             <div className="form-group col-md-8">
                                                 <label htmlFor="Street">Rua</label>
                                                 <input type="text" className="form-control" id="Street" name="Street" value={Street} onChange={this.handleInputChange} />
@@ -117,25 +136,6 @@ export default class UserProfileForm extends React.Component<IProps, IState> {
                                             <div className="form-group col-md-6">
                                                 <label htmlFor="City">Cidade</label>
                                                 <input type="text" className="form-control" id="City" name="City" value={City} onChange={this.handleInputChange} />
-                                            </div>
-                                        </div>
-                                        <div className="form-row">
-                                            <div className="form-group col-md-4">
-                                                <label htmlFor="State">Estado</label>
-                                                <input type="text" className="form-control" id="State" name="State" maxLength={2} value={State} onChange={this.handleInputChange} />
-                                            </div>
-                                            <div className="form-group col-md-4">
-                                                <label htmlFor="Country">País</label>
-                                                <input type="text" className="form-control" id="Country" name="Country" value={Country} onChange={this.handleInputChange} />
-                                            </div>
-                                            <div className="form-group col-md-4">
-                                                <label htmlFor="ZipCode">CEP</label>
-                                                <div className="input-group">
-                                                    <input type="text" className="form-control" id="ZipCode" name="ZipCode" maxLength={9} value={ZipCode} onChange={this.handleInputChange} />
-                                                    <div className="input-group-append">
-                                                        <button type="button" className="btn btn-primary" onClick={this.handleZipCodeSearch}><i className="material-icons">search</i></button>
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                         <div className="form-row">

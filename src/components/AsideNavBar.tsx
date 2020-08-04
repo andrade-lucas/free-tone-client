@@ -38,8 +38,8 @@ export default class AsideNavBar extends React.Component {
                                 <span>Adicionar</span>
                             </a>
                             <div className="dropdown-menu dropdown-menu-small">
-                                <a className="dropdown-item" href="user-profile-lite.html">
-                                    <i className="material-icons">&#xE7FD;</i> Usuário</a>
+                                <Link to="/users/create" className="dropdown-item" href="user-profile-lite.html">
+                                    <i className="material-icons">&#xE7FD;</i> Usuário</Link>
                                 <Link to="/albums/create" className="dropdown-item">
                                     <i className="material-icons">album</i> Álbum</Link>
                                 <Link to="/categories/create" className="dropdown-item">

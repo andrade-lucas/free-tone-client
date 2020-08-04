@@ -8,6 +8,7 @@ import ListCategoriesPage from './pages/category/ListCategoriesPage';
 import CreateCategoriesPage from './pages/category/CreateCategoriesPage';
 import ProfilePage from './pages/user/ProfilePage';
 import AlbumDetailPage from './pages/album/AlbumDetailPage';
+import CreateUserPage from './pages/user/CreateUserPage';
 
 
 const Routes = () => (
@@ -20,6 +21,7 @@ const Routes = () => (
         <Route exact path="/categories" component={ListCategoriesPage} />
         <Route path="/categories/create" component={CreateCategoriesPage} />
         <Route exact path="/account/profile" component={ProfilePage} />
+        <Route exact path="/users/create" component={CreateUserPage} />
     </Switch>
 );
 
