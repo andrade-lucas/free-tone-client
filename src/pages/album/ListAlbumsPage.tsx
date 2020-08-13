@@ -9,7 +9,7 @@ export default class ListAlbumsPage extends React.Component<IProps> {
     constructor(props: IProps) {
         super(props);
     }
-
+    
     render() {
         return (
             <div className="col-md-12 col-sm-12 mb-12">

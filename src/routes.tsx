@@ -14,6 +14,7 @@ import CreateSingerPage from './pages/singers/CreateSingerPage';
 import ListSingersPage from './pages/singers/ListSingersPage';
 import UpdateSingerPage from './pages/singers/UpdateSingerPage';
 import UpdateCategoryPage from './pages/category/UpdateCategoryPage';
+import AboutPage from './pages/shared/AboutPage';
 
 const Routes = () => (
     <Switch>
@@ -31,6 +32,8 @@ const Routes = () => (
         <Route exact path="/singers" component={ListSingersPage} />
         <Route exact path="/singers/create" component={CreateSingerPage} />
         <Route path="/singers/update/:id" component={UpdateSingerPage} />
+        
+        <Route exact path="/about" component={AboutPage} />
     </Switch>
 );
 

@@ -5,6 +5,8 @@ import TopBar from './components/TopBar';
 import Footer from './components/Footer';
 import SystemTerms from './components/SystemTerms';
 import { BrowserRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         </div>
       </div>
       <SystemTerms />
+      <ToastContainer />
     </BrowserRouter>
   );
 }
